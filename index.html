@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" content="ben dover">
+        <meta name="publish_date" content="4167BC">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="vuestuff.js"></script>
+        <script src="other.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link rel="stylesheet" href="w3styling.css">
+        <link rel="stylesheet" href="otherstyle.css">
+        <title>Newspaper thingy - Test</title>
+    </head>
+    <body>
+        <div id="top">
+            <a id="bigtitle" href="google.com">*Newspaper Name*</a><br><br>
+            <!-- And then insert topbar-->
+            <div id="topnav">
+                <a class="active" href="google.com">Home</a>
+                <a href="google.com">Links</a>
+                <a href="google.com">Contact</a>
+                <a href="google.com">About</a>
+            </div>
+        </div>
+        <hr>
+        <div id="main">
+             <h1 id="articletitle">**Title**</h1>
+             <p id="details">**Author and stuff**</p>
+             <br><br>
+
+             <img src="" alt="Sorry, picture not available"><br>
+             <p>**Caption** from <a href="google.com">Link</a></p>
+             <br><br>
+
+             <div id="actual_content">
+                <p>Bla bla bla</p>
+                <p>More random text</p>
+                <p>Okay we get it</p>
+             </div>
+        </div>
+        <hr>
+        <div id="bottom">
+            <!-- Like redirs -->
+             <h2>Some random text like "If u liked this see here"</h2>
+            <br><br>
+             <div id="bottom_bar">
+                <span id="bottom_leftbox"></span>
+                 <div class="redir_box" onclick="redir()" title="Redirect to article">
+                    <h4>Another article name</h4>
+                    <caption> By author</caption>
+                    <img src="" alt="Image not available"><br><br>
+                    <p>Some text about it</p>
+                 </div>
+             </div>
+             <div id="very_bottom">
+                <br><br><br>
+                <p id="bottomtext">Open source project by <a id="credits" href="google.com">Kool Knowledge Klan</a> (2025)</p>
+             </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+#bigtitle {
+    text-align: center;
+    font-size: 80px;
+    text-decoration-line: none;
+}
+
+#articletitle {
+    font-size: 50px;
+    text-align: center;
+}
+
+#details {
+    text-align: center;
+}
+
+#bottom_leftbox {
+    width: 20px;
+    height: 1px;
+    padding: 20px;
+}
+
+.redir_box {
+    border: 3.5px solid black;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.homepage_article {
+    border: 3.5px solid black;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#bottomtext {
+    text-align: center;
+}
+
+#topnav {
+    overflow: hidden;
+    padding: 40px;
+}
+
+#topnav a {
+    text-decoration-line: none;
+    padding: 15px;
+    /*
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+    */
+}
+
+#topnav a:hover {
+}
+#topnav a.active {
+}
+
+@media screen and (max-width: 600px) {
+    #topnav a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+#credits {
+    text-decoration-line: none;
+}
