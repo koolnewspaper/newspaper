@@ -1,0 +1,43 @@
+{
+    "comment": "This is for global stuff",
+
+    "newspaper_name": "Kool Newspaper",
+    "author": "Kool Knowledge Klan",
+    "include_author": true,
+    "authorsrc": "no",
+    "topbar": [
+        {
+            "name": "link",
+            "home": "anotherlink"
+        }
+    ],
+    "bottomarea_title": "Read similar articles",
+
+    "articles": {
+        "sillyid": {
+            "title":"title",
+            "detail_caption":"author",
+            "images": [
+                {
+                    "imgsrc":"imgsrc",
+                    "external_img": false,
+                    "imgcaption":"imgcaption"
+                }
+            ],
+
+            "summary":"summary",
+            "author":"author",
+            "content_paras": [
+                "blablabla",
+                "no one gives a f"
+            ],
+
+            "show_redirs":false,
+            "redirs": [
+                {
+                    "article_name": "no"
+                }
+            ]
+        }
+    }
+}
