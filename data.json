@@ -5,10 +5,13 @@
     "author": "Kool Knowledge Klan",
     "include_author": true,
     "authorsrc": "no",
+
+    "homepage_src": "no",
+    
     "topbar": [
         {
             "name": "link",
-            "home": "anotherlink"
+            "link": "anotherlink"
         }
     ],
     "bottomarea_title": "Read similar articles",
