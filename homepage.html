@@ -1,41 +1,49 @@
 <!DOCTYPE HTML>
 <html lang="en">
     <head>
-        <title>Homepage</title>
         <meta charset="utf-8">
-        <meta name="author" content="ben dane wanker">
         <meta name="viewport" content="width=device-width">
+        <meta name="author" v-bind:content="author">
+        <meta name="publish_date" content="4167BC">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="vuestuff.js"></script>
+        <script src="other.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
         <link rel="stylesheet" href="w3styling.css">
         <link rel="stylesheet" href="otherstyle.css">
     </head>
-    <body>
+    <body id="body">
+        <title>{{ newspaper_name + " Homepage" }}</title>
+
+        <!-- When loading -->
+        <div id="cover_elem">Please wait until all content has been fully loaded</div>
+
         <div id="top">
-            <a id="bigtitle" href="google.com">*Newspaper Name*</a><br><br>
+            <h1 id="bigtitle"><a id="homepage_link" v-bind:href="homepage_src">{{ newspaper_name }}</a></h1><br><br>
             <!-- And then insert topbar-->
             <div id="topnav">
-                <a class="active" href="google.com">Home</a>
-                <a href="google.com">Links</a>
-                <a href="google.com">Contact</a>
-                <a href="google.com">About</a>
+                <a v-for="elem in topbar" v-bind:href="elem.link"> {{ elem.name }} </a>
             </div>
         </div>
         <hr>
 
         <div id="main_content">
             <!-- I guess i have to manually place them in after using vue automation-->
-            <div class="homepage_article">
-                <h4>Name</h4>
-                <caption> By author</caption><br>
-                <img src="" alt="Image not available">
-                <p>Some text about it</p>
+            <div class="hp_article_box" v-for="article in articles">
+                <span class="homepage_padbox"></span>
+                <div class="homepage_article">
+                    <h4>{{ article.title }}</h4>
+                    <caption> By {{ article.author }}</caption><br>
+                    <img v-bind:src="article.images[0].imgsrc" alt="Image not available">
+                    <p>{{ article.summary }}</p>
+                </div>
             </div>
         </div>
         <hr>
 
         <div id="very_bottom">
             <br><br><br>
-            <p id="bottomtext">Open source project by <a id="credits" href="google.com">Kool Knowledge Klan</a> (2025)</p>
+            <p id="bottomtext">Open source project by <a id="credits" href="#">{{ author }}</a> (2025)</p>
          </div>
     </body>
 </html>

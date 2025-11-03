@@ -1,17 +1,59 @@
-#bigtitle {
+/*Main big things*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#cover_elem {
+    height:100%;
+    width:100%;
+    padding:1px;
+    background-color: black;
+    color: white;
     text-align: center;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+}
+
+/*Titles*/
+
+#bigtitle {
     font-size: 80px;
     text-decoration-line: none;
 }
 
-#articletitle {
-    font-size: 50px;
+#articletitle, #details, #bigtitle, #bottomtext {
     text-align: center;
 }
 
-#details {
-    text-align: center;
+#articletitle {
+    font-size: 50px;
 }
+
+/*Content boxes*/
+
+.redir_box, .homepage_article {
+    border: 3.5px solid black;
+    display: inline-block;
+}
+
+.redir_box {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.homepage_article {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*Padding boxes*/
 
 #bottom_leftbox {
     width: 20px;
@@ -19,23 +61,13 @@
     padding: 20px;
 }
 
-.redir_box {
-    border: 3.5px solid black;
-    display: inline-block;
-    padding: 5px;
-    border-radius: 5px;
+.homepage_padbox {
+    height: 1px;
+    width: 20px;
+    padding: 20px;
 }
 
-.homepage_article {
-    border: 3.5px solid black;
-    display: inline-block;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-#bottomtext {
-    text-align: center;
-}
+/*Topbar*/
 
 #topnav {
     overflow: hidden;
@@ -45,19 +77,12 @@
 #topnav a {
     text-decoration-line: none;
     padding: 15px;
-    /*
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    font-size: 17px;
-    */
 }
 
-#topnav a:hover {
-}
-#topnav a.active {
-}
+/*
+#topnav a:hover {}
+#topnav a.active {}
+*/
 
 @media screen and (max-width: 600px) {
     #topnav a {
@@ -67,6 +92,7 @@
     }
 }
 
-#credits {
+/*Other*/
+#credits, #homepage_link {
     text-decoration-line: none;
 }
