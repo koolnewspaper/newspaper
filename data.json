@@ -20,8 +20,8 @@
     ],
     "bottomarea_title": "Read similar articles",
 
-    "articles": {
-        "test1": {
+    "articles": [
+        {
             "title":"title",
             "detail_caption":"author",
 
@@ -48,9 +48,8 @@
                     "article_name": "no"
                 }
             ]
-        }
-    },
-    "test2": {
+        },
+        {
         "title":"title2",
         "detail_caption":"me",
 
@@ -78,5 +77,6 @@
                 "article_name": "no"
             }
         ]
-    }
+        }
+    ]
 }
