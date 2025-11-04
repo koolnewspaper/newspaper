@@ -14,7 +14,7 @@ function fetchJSONData(path) {
 }
 
 function app_ref(data) {
-    return Vue.createApp({data() {return data}})
+    return Vue.createApp({data() {return data}, methods: {redirect(src) { window.location.href = src } }})
 }
 
 function deploy_app(app, ref) {

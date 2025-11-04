@@ -16,7 +16,7 @@
         <title>{{ newspaper_name }}</title>
 
          <!-- When loading -->
-         <div id="cover_elem"></div>
+         <div id="cover_elem">Please wait until all content has been fully loaded</div>
 
         <div id="top">
             <h1 id="bigtitle"><a id="homepage_link" v-bind:href="homepage_src">{{ newspaper_name }}</a></h1><br><br>
@@ -44,26 +44,26 @@
         </div>
         <hr>
 
-        <div id="bottom" v-show="show_redirs" hidden>
+        <div id="bottom" v-show="show_redirs">
             <!-- Like redirs, work on later, not now -->
             <h2>{{ bottomarea_title }}</h2>
             <br><br>
              <div id="bottom_bar">
                 <span id="bottom_leftbox"></span>
 
-                 <div class="redir_box" onclick="redir()" title="Redirect to article">
-                    <h4>Another article name</h4>
-                    <caption> By author</caption>
-                    <img src="" alt="Image not available"><br><br>
-                    <p>Some text about it</p>
-                 </div>
+                <div class="redir_box" v-for="item in redirs" @click="redirect(articles[item].src)"> 
+                    <h4>{{ articles[item].title }}</h4>
+                    <caption>{{ articles[item].author }}</caption>
+                    <img v-bind:src="articles[item].imagesrc" alt="Image not available"><br><br>
+                    <p>{{ articles[item].summary }}</p>
+                </div>
 
              </div>
         </div>
 
         <div id="very_bottom">
             <br><br>
-            <p v-show="include_author" id="bottomtext">Open source project by <a id="credits" href="#">Kool Knowledge Klan</a> (2025)</p>
+            <p v-show="include_author" id="bottomtext">Open source project by <a id="credits" href="#">{{ author }}</a> (2025)</p>
          </div>
     </body>
 </html>

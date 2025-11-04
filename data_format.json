@@ -1,0 +1,25 @@
+{
+    "article": {
+        "title": "title",
+        "author": "author",
+        "imgsrc": ["imgsrc"],
+        "imgcaption": ["imgcaption"],
+        "content": ["para1", "para2"],
+        "similar": [
+            {
+                "src": "google.com",
+                "imgsrc": "imgsrc",
+                "summary": "summary",
+                "author": "author"
+            }
+        ]
+    },
+    "homepage_article": {
+        "title": "title",
+        "src": "src",
+        "author": "author",
+        "imgsrc": "imgsrc",
+        "summary": "summary",
+        "extra_data": {}
+    }
+}

@@ -31,12 +31,12 @@
             <!-- I guess i have to manually place them in after using vue automation-->
             <div class="hp_article_box" v-for="article in articles">
                 <span class="homepage_padbox"></span>
-                <div class="homepage_article">
-                    <h4>{{ article.title }}</h4>
-                    <caption> By {{ article.author }}</caption><br>
-                    <img v-bind:src="article.images[0].imgsrc" alt="Image not available">
-                    <p>{{ article.summary }}</p>
-                </div>
+                <span class="homepage_article" @click="redirect(article.src)">
+                    <b>{{ article.title }}</b><br>
+                    <a> By {{ article.author }}</a><br>
+                    <img v-bind:src="article.images[0].imgsrc" alt="Image not available"><br>
+                    <span>{{ article.summary }}</span>
+                </span>
             </div>
         </div>
         <hr>
