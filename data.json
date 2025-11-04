@@ -10,14 +10,18 @@
     
     "topbar": [
         {
-            "name": "link",
-            "link": "anotherlink"
+            "name": "homepage",
+            "link": "homepage_src"
+        },
+        {
+            "name": "contact us",
+            "link": "contact"
         }
     ],
     "bottomarea_title": "Read similar articles",
 
     "articles": {
-        "sillyid": {
+        "test1": {
             "title":"title",
             "detail_caption":"author",
 
@@ -45,5 +49,34 @@
                 }
             ]
         }
+    },
+    "test2": {
+        "title":"title2",
+        "detail_caption":"me",
+
+        "src":"rar",
+
+        "images": [
+            {
+                "imgsrc":"imgsrc",
+                "external_img": false,
+                "imgcaption":"imgcaption"
+            }
+        ],
+
+        "summary":"a buncha testing",
+        "author":"me",
+        "content_paras": [
+            "herro",
+            "dere",
+            "i am da sigma cuz ahahaha bozobozozozozozoz"
+        ],
+
+        "show_redirs":false,
+        "redirs": [
+            {
+                "article_name": "no"
+            }
+        ]
     }
 }
