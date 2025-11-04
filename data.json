@@ -20,6 +20,9 @@
         "sillyid": {
             "title":"title",
             "detail_caption":"author",
+
+            "src":"src",
+
             "images": [
                 {
                     "imgsrc":"imgsrc",
