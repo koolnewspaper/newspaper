@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" v-bind:content="author">
+        <meta name="publish_date" content="4167BC">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="vuestuff.js"></script>
+        <script src="article.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link rel="stylesheet" href="w3styling.css">
+        <link rel="stylesheet" href="otherstyle.css">
+    </head>
+    <body id="body">
+        <title>{{ newspaper_name }}</title>
+
+         <!-- When loading -->
+         <div id="cover_elem">Please wait until all content has been fully loaded</div>
+
+        <div id="top">
+            <h1 id="bigtitle"><a id="homepage_link" v-bind:href="homepage_src">{{ newspaper_name }}</a></h1><br><br>
+            <!-- And then insert topbar-->
+            <span id="topnav">
+                <a v-for="elem in topbar" v-bind:href="elem.link"> {{ elem.name }} </a>
+            </span>
+            <span id="topbar_search">
+                <input id="topbar_search_input" placeholder="Search" @click="runsearch()">
+            </span>
+        </div>
+        <hr>
+        <div id="main">
+             <h1 id="articletitle">{{ title }}</h1>
+             <p id="details">{{ detail_caption }}</p>
+             <br><br>
+
+             <div v-for="data in images">
+                <img v-bind:src="data.imgsrc" alt="Sorry, picture not available"><br>
+                <p>{{ data.imgcaption }} <a v-show="data.external_img">(Accessed from <a v-bind:href="data.imgsrc">)</a></a></p>
+                <br>
+             </div>
+
+             <br>
+             <div id="actual_content">
+                <p v-for="para in content_paras">{{ para }}</p>
+             </div>
+        </div>
+        <hr>
+
+        <div id="bottom" v-show="show_redirs">
+            <!-- Like redirs, work on later, not now -->
+            <h2 id="bottom_areatitle">{{ bottomarea_title }}</h2>
+            <br><br>
+             <div id="bottom_bar">
+                <span id="bottom_leftbox"></span>
+
+                <div class="redir_box" v-for="item in redirs" @click="redirect(articles[item][src])"> 
+                    <h4>{{ item.article_name }}</h4>
+                    <caption>{{ item.author }}</caption>
+                    <img v-bind:src="item.imagesrc" alt="Image not available"><br><br>
+                    <p>{{ item.summary }}</p>
+                </div>
+
+             </div>
+        </div>
+
+        <div id="very_bottom">
+            <br><br>
+            <p v-show="include_author" id="bottomtext">Open source project by <a id="credits" href="#">{{ author }}</a> (2025)</p>
+         </div>
+    </body>
+</html>

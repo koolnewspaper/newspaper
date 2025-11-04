@@ -10,11 +10,11 @@
     
     "topbar": [
         {
-            "name": "homepage",
+            "name": "Homepage",
             "link": "homepage_src"
         },
         {
-            "name": "contact us",
+            "name": "Contact Us",
             "link": "contact"
         }
     ],
@@ -45,7 +45,10 @@
             "show_redirs":false,
             "redirs": [
                 {
-                    "article_name": "no"
+                    "article_name": "rar test",
+                    "summary": "hello this is content",
+                    "author": "author",
+                    "imagesrc": "image"
                 }
             ]
         },
@@ -78,5 +81,13 @@
             }
         ]
         }
-    ]
+    ],
+    "search_articles": {
+        "title": {
+            "namea": "name",
+            "srca": "src",
+            "authora": "author",
+            "summarya": "blablabla"
+        }
+    }
 }

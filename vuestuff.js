@@ -14,18 +14,14 @@ function fetchJSONData(path) {
 }
 
 function app_ref(data) {
-    return Vue.createApp({data() {return data}, methods: {redirect(src) { window.location.href = src } }})
+    return Vue.createApp({data() {return data}, methods: {
+        redirect(src) { window.location.href = src } ,
+        topbar_search() {
+            return processSearchQueryWithSimilarity(document.getElementById("topbar_search_input").value, data.search_articles.keys())
+        }
+    }})
 }
 
 function deploy_app(app, ref) {
     app.mount(ref)
 }
-
-window.addEventListener('load', function() {
-    const kool_promise = fetchJSONData("https://raw.githubusercontent.com/koolnewspaper/newspaper/refs/heads/main/data.json");
-    kool_promise.then(data => {
-        console.log(data)
-        deploy_app(app_ref(data), "#body")
-        this.document.getElementById("cover_elem").style.display = "none";
-    });
-});

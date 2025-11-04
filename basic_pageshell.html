@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="author" v-bind:content="author">
+        <meta name="publish_date" content="4167BC">
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="vuestuff.js"></script>
+        <script src="article.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <link rel="stylesheet" href="w3styling.css">
+        <link rel="stylesheet" href="otherstyle.css">
+    </head>
+    <body id="body">
+        <title>Contact Us</title>
+
+         <!-- When loading -->
+         <div id="cover_elem">Please wait until all content has been fully loaded</div>
+
+        <div id="top">
+            <h1 id="bigtitle"><a id="homepage_link" v-bind:href="homepage_src">{{ newspaper_name }}</a></h1><br><br>
+            <!-- And then insert topbar-->
+            <span id="topnav">
+                <a v-for="elem in topbar" v-bind:href="elem.link"> {{ elem.name }} </a>
+            </span>
+            <span id="topbar_search">
+                <input id="topbar_search_input" placeholder="Search" @click="runsearch()">
+            </span>
+        </div>
+        <hr>
+        <div id="main">
+            Content goes here.
+        </div>
+        <hr>
+
+        <div id="very_bottom">
+            <br><br>
+            <p v-show="include_author" id="bottomtext">Open source project by <a id="credits" href="#">{{ author }}</a> (2025)</p>
+         </div>
+    </body>
+</html>

@@ -21,6 +21,10 @@ html, body {
     font-size: 75px;
 }
 
+#main, #bottom {
+    padding: 20px
+}
+
 /*Titles*/
 
 #bigtitle {
@@ -38,9 +42,17 @@ html, body {
 
 /*Content boxes*/
 
+.hp_article_box {
+    float: left;
+}
+
 .redir_box, .homepage_article {
     border: 3.5px solid black;
     display: inline-block;
+    cursor: pointer;
+}
+
+#topbar_search, .search_result {
     cursor: pointer;
 }
 
@@ -96,4 +108,8 @@ html, body {
 /*Other*/
 #credits, #homepage_link {
     text-decoration-line: none;
+}
+
+#topbar_search {
+    border-radius: 2px;
 }
