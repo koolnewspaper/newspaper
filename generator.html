@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Data Generator</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+            var paraid = 1;
+            function newpara() {
+                paraid++;
+                node1 = document.createElement('a');
+                node1.id = parseInt(paraid);
+                node1.class = "para";
+                node1.placeholder = "Enter paragraph "+parseInt(paraid);
+
+                node2 = document.createElement('input');
+                node2.id = "para"+parseInt(paraid)+"-label";
+                node2.innerText = "Paragraph "+parseInt(paraid)
+            }
+
+            function submit() {
+                title = $('#title').value
+                author = $('#author').value
+                image = $('#image').value
+                caption = $('#caption').value
+                summary = $('#summary').value
+
+                $('#output').style.display = 'block'
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Silly data generator for kool knewpspaper klan</h1>
+        Sorry this looks sht but iz easier to work width
+        <form style="border: 1px solid blue; background-color: lightblue">
+            <h2>Za Actual form</h2>
+            Title: <input type="text" id="title" placeholder="Enter title"><br>
+            Author: <input type="text" id="author" placeholder="Enter author"><br>
+            Image: <input type="text" id="image" placeholder="Enter image link/souyrce"> (by the way fu, just give me thbe link to an image cuz im lazy to implement file dialogue)<br>
+            Image Caption: <input type="text" id="caption" placeholder="Enter image caption"><br>
+            Summary: <input type="text" id="summary" placeholder="Enter article summary"><br>
+
+            <div id="abunchacontent">
+                <h3>A buncha content</h3><br>
+                <div id="actualinputs">
+                    <a id="para1-label">Paragraph 1:</a> <input class="para" id="1" placeholder="Enter paragraph 1">
+                </div>
+                <br><button id="btn_newcontent" onclick="newpara()">Add content paragraph</button>
+            </div>
+
+            <button onclick="submit()">Submit </button>
+        </form>
+
+        <pre id="output" hidden style="border: solid 1px black; border-radius: 5px">
+        </div>
+    </body>
+</html>
