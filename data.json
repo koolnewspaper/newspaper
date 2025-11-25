@@ -18,28 +18,33 @@
             "link": "contact"
         }
     ],
+
     "bottomarea_title": "Read similar articles",
 
     "articles": [
         {
-            "title":"title",
-            "detail_caption":"author",
+            "title":"Studies show that video games can cause better cognitive skills in children",
+            "detail_caption":"Lucas Herzog",
 
             "src":"src",
 
             "images": [
                 {
-                    "imgsrc":"imgsrc",
-                    "external_img": false,
-                    "imgcaption":"imgcaption"
+                    "imgsrc":"https://imgs.search.brave.com/liHOWs_nzNobqO5UnM69nx8aMJ38TfZNEZmvT1QzJPo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9jaGls/ZHJlbi1wbGF5aW5n/LXZpZGVvLWdhbWVz/LWNhcnRvb24tYm95/LWdpcmwtdG9nZXRo/ZXItdmVjdG9yLWls/bHVzdHJhdGlvbi03/MDY3OTU4Ni5qcGc",
+                    "external_img": true,
+                    "imgcaption":"Two young children playing fun online games, also improving their thinking skillz."
                 }
             ],
 
             "summary":"summary",
-            "author":"author",
+            "author":"Lucas Herzog",
             "content_paras": [
-                "blablabla",
-                "no one gives a f"
+                "Imagine a world where every child plays video games, be it calming, low-stakes games like Sudoku, or difficult and fast-paced games like Elden Ring. No matter what games the children play, their cognitive skills are far above what used to be, and everyone is on average healthier than what ‘normalcy’ now is. Currently in Australia, lots of children and adults have more stress levels than ever before, and it’s all due to the ramp up of difficulty in school and work. It is my firm belief that video games do more good than harm because they can improve coordination, they reduce stress in children, and they provide more opportunities to be social than going outside.",
+                "Firstly, you must agree that video games can vastly improve coordination in children and adults. This is because lots of video games are created with the need of fine motor skills, and the players must learn the controls of the game and perform them at rapid rates. For example, A study was done in Albania between people who didn’t play video games and people who did. The study proved that the people who were playing video games had, on average, a 40% faster reaction times and could catch things thrown at them about 60% better than the people who didn’t play video games. This proves that people who do play video games have much better coordination than people who don’t play video games. Therefore, it is abundantly clear that video games do more good than harm because it is greatly able to improve motor skills and reaction times.",
+                "Another reason to consider is that video games tremendously reduce stress in children and adults. This is important because everyday life is slowly becoming more stressful. Everything costs more, schoolwork is harder, and jobs are not keeping up with inflation. Someone who knows this too well is Mister Song, who uses video games to get away from the gripes of life. He spends about 2 hours playing video games every day, and after the time is up, he feels much less stressed and can do his work more efficiently. Therefore, isn’t it obvious that video games can reduce stress in children.",
+                "A third reason to consider is that video games provide more ways to be social than going outside. This is critical because it is getting hotter outside, people are staying inside more, and they have more work to do. Video games are really the only way people can socialise at all. For example, Local psychology expert Dr John Barber, who has made extensive studies into children being social, has stated, ‘Most children only go outside for about half an hour a day outside of school activities, but they have more friends than ever, and this is all due to multiplayer video games. Kids play multiplayer video games with the friends they have online, and in the process of that, they befriend other people in that game, and then they play games with those friends, and so on, so forth. In fact, I did a study about 3 months back to see if children had more online friends than in-person friends, and 87% of them said they had more online friends.’ Therefore, video games provide more opportunities to be social than going outside.",
+                "Some people think gaming can cause many health issues, such as obesity and vision impairment, but this is much less serious than most people think, because those health issues already happen without video games, and there are so many more health risks that happen without video games included. Now that you’ve heard the facts, you must believe that video games do more good than harm.",
+                "I’m sure by now that I have convinced you that video games do more good than harm. I’ve told you that video games can improve coordination, reduce stress in children and adults, and they provide more opportunities to be social than going outside. Now you have a decision to make. Know that you are correct and believe that video games do more good than harm or be an ignorant person that thinks video games are harmful. The choice is entirely yours."
             ],
 
             "show_redirs":false,
@@ -53,41 +58,54 @@
             ]
         },
         {
-        "title":"title2",
-        "detail_caption":"me",
+            "title":"Screen Time Crisis Threatens Youth Health, Learning and Wellbeing",
+            "detail_caption":"Alex Li",
 
-        "src":"rar",
+            "src":"src",
 
-        "images": [
-            {
-                "imgsrc":"imgsrc",
-                "external_img": false,
-                "imgcaption":"imgcaption"
-            }
-        ],
+            "images": [
+                {
+                    "imgsrc":"https://addictionresource.com/wp-content/uploads/2021/01/screaming-while-playing-video-games-min.jpg",
+                    "external_img": true,
+                    "imgcaption":"A teenager sits exhausted in front of multiple screens, showing the growing impact of excessive screen use on youth wellbeing."
+                }
+            ],
 
-        "summary":"a buncha testing",
-        "author":"me",
-        "content_paras": [
-            "herro",
-            "dere",
-            "i am da sigma cuz ahahaha bozobozozozozozoz"
-        ],
+            "summary":"summary",
+            "author":"Alex Li",
+            "content_paras": [
+                "Across homes, classrooms and public spaces, young people can be seen staring into glowing screens for hours each day. While many families consider this normal, experts warn that excessive screen use is silently reshaping the health and development of today’s youth. What may seem harmless entertainment is already having significant consequences for young people’s bodies, minds and emotional wellbeing.",
+                "Recent research reveals that young people aged 9 to 18 now spend more than nine hours a day on screens, mostly while sitting still. This is concerning because blue light from phones and tablets disrupts the brain’s natural sleep cycle, making it harder for teenagers to fall asleep and achieve the deep rest their bodies need to grow. Poor sleep weakens immunity, reduces alertness and makes it harder to concentrate in school. Long periods of sitting also strain the neck, spine and eyes. Many teenagers already report headaches, eye strain and posture issues. These harms clearly show that excessive screen time does not just affect behaviour. It has real physical consequences that can become long term if not addressed.",
+                "Experts also warn that heavy screen use is changing how young people learn. Studies suggest that constant exposure to fast paced digital content can reduce attention span by up to 90 percent. This is significant because the adolescent brain is still forming important neural pathways that shape thinking and problem solving. Harvard paediatrician Michael Rich explains that rapidly switching between apps and notifications trains the brain to expect constant stimulation, making it harder for students to focus during lessons or complete challenging tasks. When the brain becomes used to instant entertainment, activities like reading, writing and studying feel more difficult. This evidence shows how screen overuse can directly weaken learning and memory.",
+                "Emotional wellbeing is also being affected. Mental health organisations report that teenagers who spend more than two hours a day on recreational screen use are more likely to experience irritability, stress and lower life satisfaction. Young people who rely on screens for entertainment may find it harder to cope with boredom or enjoy real life social interactions. Over time, this reduces their ability to form strong relationships and regulate their emotions. These patterns demonstrate that screens are not just a distraction. They can influence how young people feel and interact with the world around them.",
+                "Although screens can be useful for education and communication, experts emphasise that problems arise when digital devices begin to replace essential activities such as exercise, proper sleep and face to face socialising. Families and schools are being encouraged to set balanced routines that protect young people’s health while still allowing technology to play a positive role.",
+                "As digital devices continue to expand into everyday life, young people face an important decision. They can allow screens to control their routines and development, or they can establish healthier habits that safeguard their physical and mental wellbeing. With growing evidence showing the risks of excessive screen time, specialists warn that today’s choices may determine the health and happiness of an entire generation."
+           ],
 
-        "show_redirs":false,
-        "redirs": [
-            {
-                "article_name": "no"
-            }
-        ]
+            "show_redirs":false,
+            "redirs": [
+                {
+                    "article_name": "rar test",
+                    "summary": "hello this is content",
+                    "author": "author",
+                    "imagesrc": "image"
+                }
+            ]
         }
     ],
+
     "search_articles": {
-        "title": {
-            "namea": "name",
+        "lh_t7": {
+            "namea": "Studies show that video games can cause better cognitive skills in children",
             "srca": "src",
-            "authora": "author",
-            "summarya": "blablabla"
+            "authora": "Lucas Herzog",
+            "summarya": "Video games have a direct affect on cognitive skills, especially in children."
+        },
+        "hl_t7": {
+            "namea": "Screen Time Crisis Threatens Youth Health, Learning and Wellbeing",
+            "scra": "src",
+            "authora": "Alex Li",
+            "summarya": "Screen time crisis ig so herro dere easter egg!"
         }
     }
 }
